@@ -1,0 +1,22 @@
+# Core data and service dependencies
+pandas>=2.1,<4
+numpy>=1.26,<3
+PyYAML>=6.0
+python-dotenv>=1.0
+fastapi>=0.110,<1
+uvicorn[standard]>=0.27
+pydantic-settings>=2.2
+redis>=5.0
+faiss-cpu>=1.8
+
+# Deep learning (install a compatible TensorFlow build for your platform)
+tensorflow>=2.15,<2.19
+tensorflow-recommenders>=0.7.3
+
+# Optional scale-up preprocessing. Local Pandas pipeline does not require Spark.
+pyspark>=3.5,<4
+
+# Development and quality checks
+pytest>=8.0
+httpx>=0.27
+ruff>=0.4

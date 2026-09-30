@@ -1,0 +1,36 @@
+project:
+  name: context-aware-fashion-recommender
+  random_seed: 42
+  data_dir: data
+  artifact_dir: artifacts
+
+data:
+  transactions: data/raw_small/transactions_train.csv
+  customers: data/raw_small/customers.csv
+  articles: data/raw_small/articles.csv
+  max_users: null
+  processed_dir: data/processed
+  validation_days: 7
+  max_rows: null
+
+features:
+  history_days: 90
+  max_history_items: 20
+  embedding_dim: 64
+
+training:
+  batch_size: 4096
+  epochs: 5
+  learning_rate: 0.001
+  negative_ratio: 4
+
+evaluation:
+  ks: [5, 10, 20]
+
+retrieval:
+  index_type: flat_ip
+  candidate_pool_size: 100
+
+redis:
+  url_env: REDIS_URL
+  key_prefix: recommender

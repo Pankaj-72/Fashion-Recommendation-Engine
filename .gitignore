@@ -1,0 +1,41 @@
+# Dataset files (download separately from Kaggle)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+artifacts/
+*.faiss
+*.npy
+*.npz
+*.keras
+*.weights.h5
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Logs and orchestration state
+*.log
+logs/
+airflow/logs/
+airflow/airflow.db
+airflow/standalone_admin_password.txt
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
