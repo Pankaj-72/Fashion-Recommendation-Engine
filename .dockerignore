@@ -1,0 +1,13 @@
+.git
+.venv
+venv
+__pycache__
+*.py[cod]
+.env
+data/raw
+data/processed
+artifacts
+airflow/logs
+logs
+.pytest_cache
+.ruff_cache

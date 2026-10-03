@@ -1,0 +1,6 @@
+fastapi>=0.110,<1
+uvicorn[standard]>=0.27
+pandas>=2.1,<4
+numpy>=1.26,<3
+redis>=5.0
+faiss-cpu>=1.8
